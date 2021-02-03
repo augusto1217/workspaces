@@ -3,3 +3,5 @@ iniciando projeto
 adicionando mais itens
 teste para merge
 teste pare rebase
+teste cmd fetch
+testing command git fetch
