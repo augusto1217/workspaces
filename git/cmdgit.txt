@@ -33,3 +33,7 @@ git tag tagName
 
 #remove tag local
 git tag -d tagname
+
+#send tag remote
+git push origin tagName
+git push
