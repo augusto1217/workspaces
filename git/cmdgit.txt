@@ -21,3 +21,4 @@ git merge branchComCommitsQueDesejaAdicionar
 //rebase
 git checkout branchNameQueDesejaAtualizar
 git rebase branchComCommitsQueDesejar
+git push
