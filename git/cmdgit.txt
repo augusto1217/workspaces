@@ -13,3 +13,7 @@ git checkout branchName
 
 // send branch github
 git push -u origin branchName
+
+//merge
+git checkout branchNameQueDesejaAtualizar
+git merge branchComCommitsQueDesejaAdicionar
