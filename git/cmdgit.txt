@@ -5,7 +5,8 @@ git branch -d localBranchName
 git push origin --delete remoteBranchName
 
 # create branch locally
-Git branch localBranchName
+git branch localBranchName
+git checkout -b branchName
 
 # change branch locally
 git checkout branchName
