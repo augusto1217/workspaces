@@ -27,3 +27,9 @@ git rebase branchName
 --show msg with conflict the be resolved
 --editing file with conflict save
 git rebase --continue
+
+#tag
+git tag tagName
+
+#remove tag local
+git tag -d tagname
