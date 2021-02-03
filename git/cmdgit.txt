@@ -3,3 +3,13 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+
+
+//create branch locally
+Git branch localBranchName
+
+// change branch locally
+git checkout branchName
+
+// send branch github
+git push -u origin branchName
