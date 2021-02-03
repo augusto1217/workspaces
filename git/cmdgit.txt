@@ -17,3 +17,7 @@ git push -u origin branchName
 //merge
 git checkout branchNameQueDesejaAtualizar
 git merge branchComCommitsQueDesejaAdicionar
+
+//rebase
+git checkout branchNameQueDesejaAtualizar
+git rebase branchComCommitsQueDesejar
