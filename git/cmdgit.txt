@@ -1,29 +1,29 @@
-# delete branch locally
+#delete branch locally
 git branch -d localBranchName
 
-# delete branch remotely
+#delete branch remotely
 git push origin --delete remoteBranchName
 
-# create branch locally
+#create branch locally
 git branch localBranchName
 git checkout -b branchName
 
-# change branch locally
+#change branch locally
 git checkout branchName
 
-# send branch github
+#send branch github
 git push -u origin branchName
 
-# merge
+#merge
 git checkout branchNameQueDesejaAtualizar
 git merge branchComCommitsQueDesejaAdicionar
 
-# rebase
+#rebase
 git checkout branchNameQueDesejaAtualizar
 git rebase branchComCommitsQueDesejar
 git push
 
-# rebase with conflict
+#rebase with conflict
 git rebase branchName
 --show msg with conflict the be resolved
 --editing file with conflict save
