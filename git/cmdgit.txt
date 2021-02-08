@@ -38,3 +38,6 @@ git tag -d tagname
 #send tag remote
 git push origin tagName
 git push
+
+#salve alter in last commit local
+git commit --amend
