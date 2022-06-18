@@ -12,3 +12,11 @@ Plugins VsCode:
 * Maven for Java
 * Material Icon Theme
 * IntelliCodes
+
+Install Browser Sync
+
+$ sudo npm install -g browser-sync
+
+Command for observer change in directory.
+
+browser-sync start --server --files "*.html" "assets\css\*.css" "assets\js\*.js"
