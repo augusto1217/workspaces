@@ -52,13 +52,27 @@
         </div>
 
         <div class="alert alert-success 
-                    alert-dismissible fade show" role="alert">
+                    alert-dismissible fade show" 
+                    role="alert">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nemo sapiente. Nulla dolor eos officiis quasi. Iure, dolorem nihil, cumque, eos sunt provident quam quasi alias nulla animi obcaecati quae.
             <button class="close" data-dismiss="alert" aria-label="close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
 
-    </div>    
+        <button id="btn-close-all" type="button">
+            Fechar todos os Alertas
+        </button>
+    </div>
+    
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-close-all').on('click', e => {
+                $('.alert').alert('close');
+            });
+        });
+    </script>
 </body>
 </html>
