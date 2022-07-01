@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-frex-justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>ha pouco</small>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt, error pariatur, earum fuga dolore sequi vel ratione excepturi autem doloremque, deserunt rerum facere consectetur fugiat eum assumenda odit sed.</p>
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, eum quod, nam vel totam tenetur, doloremque deserunt natus numquam vitae consectetur hic inventore! Asperiores id accusantium repudiandae cum animi voluptates.</small>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-frex-justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>ha pouco</small>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt, error pariatur, earum fuga dolore sequi vel ratione excepturi autem doloremque, deserunt rerum facere consectetur fugiat eum assumenda odit sed.</p>
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, eum quod, nam vel totam tenetur, doloremque deserunt natus numquam vitae consectetur hic inventore! Asperiores id accusantium repudiandae cum animi voluptates.</small>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="d-frex-justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>ha pouco</small>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nesciunt, error pariatur, earum fuga dolore sequi vel ratione excepturi autem doloremque, deserunt rerum facere consectetur fugiat eum assumenda odit sed.</p>
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, eum quod, nam vel totam tenetur, doloremque deserunt natus numquam vitae consectetur hic inventore! Asperiores id accusantium repudiandae cum animi voluptates.</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-click').on('click', e => {
+                const valor = parseInt($(e.target).find('.badge').text());
+                $(e.target).find('.badge').text(valor+1);
+            });
+        });
+    </script>
+</body>
+</html>

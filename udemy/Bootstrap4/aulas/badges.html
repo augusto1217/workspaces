@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h4>Primary <span class="badge badge-primary">Novo</span></h4>
+    <h4>Secondary <span class="badge badge-secondary">Novo</span></h4>
+    <h4>Success <span class="badge badge-success">Novo</span></h4>
+    <h4>Info <span class="badge badge-info">Novo</span></h4>
+    <h4>Pill <span class="badge badge-pill">Novo</span></h4>
+    <h4>Warning <span class="badge badge-warning">Novo</span></h4>
+    <h4>Danger <span class="badge badge-danger">Novo</span></h4>
+    <h4>Dark <span class="badge badge-dark">Novo</span></h4>
+    <h4>Light <span class="badge badge-light">Novo</span></h4>
+
+    <button type="button" id="btn-click" class="btn btn-primary">Clique <span class="badge badge-warning">0</span></button>
+    
+    <hr>
+    
+    <button type="button" class="btn btn-primary">
+        Caixa de entrada 
+        <span class="badge badge-warning">
+            0
+        </span>
+        <span class="sr-only">Have five messages not read.</span>
+    </button>
+
+    <hr>
+
+    <span class="badge badge-primary">1</span>
+    <span class="badge badge-secondary">2</span>
+    <span class="badge badge-info">3</span>
+    <span class="badge badge-warning">4</span>
+    <span class="badge badge-danger">5</span>
+    <span class="badge badge-success">6</span>
+    <span class="badge badge-dark">7</span>
+    <span class="badge badge-light">8</span>
+
+    <span class="badge badge-info">Ok</span>
+    <span class="badge badge-info badge-pill">Ok</span>
+
+    <hr>
+
+    <a href="#" class="badge badge-success">Verde</a>
+    
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-click').on('click', e => {
+                const valor = parseInt($(e.target).find('.badge').text());
+                $(e.target).find('.badge').text(valor+1);
+            });
+        });
+    </script>
+</body>
+</html>

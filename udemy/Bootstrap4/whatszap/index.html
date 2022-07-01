@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatszap</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/whats.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8 px-0 d-flex flex-column">
+
+                <header class="d-flex align-items-center">
+                    <img src="../assets/img/contact.svg" alt="Avatar">
+                    <div class="d-flex flex-column flex-fill">
+                        <h6>Developer Love</h6>
+                        <small class="timeago">See last Thursday 16 at clock pm</small>
+                    </div>
+                </header>
+
+                <main></main>
+
+                <footer></footer>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-click').on('click', e => {
+                const valor = parseInt($(e.target).find('.badge').text());
+                $(e.target).find('.badge').text(valor+1);
+            });
+        });
+    </script>
+    
+</body>
+</html>
