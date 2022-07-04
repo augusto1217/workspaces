@@ -30,3 +30,32 @@ h6 {
     color: #999;
     font-size: .8em;
 }
+
+.badge-success {
+    background-color: #09d261;
+}
+
+#search {
+    background-color: #f8f8f8;
+    min-height: 50px;
+}
+
+#panel-left {
+    border-right: #DBDBDB 1px solid;
+    color: #4d4d4d
+}
+
+#panel-left small {
+    color: #9b9b9b;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    border-color: #f8f8f8;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
