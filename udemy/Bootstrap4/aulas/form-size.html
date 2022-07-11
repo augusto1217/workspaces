@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">   
+
+        <form action="">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="digite o seu e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input class="form-control form-control-lg" type="email" name="email" id="email" placeholder="digite o seu e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input class="form-control form-control-sm" type="email" name="email" id="email" placeholder="digite o seu e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <hr>
+
+        <form action="">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="digite o seu e-mail" readonly value="augusto1217@gmail.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="form-control-plaintext">augusto1217@gmail.com</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+    </div>
+    
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-click').on('click', e => {
+                const valor = parseInt($(e.target).find('.badge').text());
+                $(e.target).find('.badge').text(valor+1);
+            });
+        });
+    </script>
+</body>
+</html>

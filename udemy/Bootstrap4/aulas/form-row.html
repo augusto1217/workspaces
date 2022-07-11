@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">   
+
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Ultimo nome" class="form-control">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <hr>
+        
+        <form action="">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Ultimo nome" class="form-control">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form> 
+
+        <hr>
+        
+        <form action="">
+            <div class="form-row">
+                <div class="col form-group">
+                    <label>Primeiro nome</label>
+                    <input type="text" placeholder="Primeiro nome" class="form-control">
+                </div>
+                <div class="col form-group">
+                    <label>Ultimo nome</label>
+                    <input type="text" placeholder="Ultimo nome" class="form-control">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form> 
+        
+    </div>
+    
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-click').on('click', e => {
+                const valor = parseInt($(e.target).find('.badge').text());
+                $(e.target).find('.badge').text(valor+1);
+            });
+        });
+    </script>
+</body>
+</html>
