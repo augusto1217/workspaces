@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container" style="margin-top: 25px;">
+        <div class="card text-white bg-primary">
+            <div class="card-header">
+                <h5 class="card-title">Title</h5>                
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint commodi accusantium reprehenderit saepe minus eos eaque, nobis omnis recusandae magni fuga delectus totam nam corporis impedit! Iusto, dicta doloribus! Fugiat?
+                </p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-success">
+            <div class="card-header">
+                <h5 class="card-title">Title</h5>                
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint commodi accusantium reprehenderit saepe minus eos eaque, nobis omnis recusandae magni fuga delectus totam nam corporis impedit! Iusto, dicta doloribus! Fugiat?
+                </p>
+            </div>
+        </div>
+
+        <div class="card border-danger">
+            <div class="card-header">
+                <h5 class="card-title">Title</h5>                
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint commodi accusantium reprehenderit saepe minus eos eaque, nobis omnis recusandae magni fuga delectus totam nam corporis impedit! Iusto, dicta doloribus! Fugiat?
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-1').on('click', e => {
+                $('[href="#aba2-2"]').tab('show')
+            });
+
+            $('#btn-2').on('click', e => {
+                $('[href="#aba-1"]').tab('show')
+            });
+
+            $('#btn-3').on('click', e => {
+                $('[href="#tab-3"]').tab('show')
+            });
+        });
+    </script> 
+    
+</body>
+</html>

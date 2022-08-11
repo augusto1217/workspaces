@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container" style="margin-top: 25px;">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Title of Card</h5>
+                <h6 class="card-title">Subtitle of Card</h6>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt praesentium animi ex quibusdam libero temporibus ut rem eos. Ab qui necessitatibus explicabo quae corporis molestiae culpa delectus placeat vero expedita?
+                </p>
+                <button class="btn btn-primary">Ok</button>
+                <a href="#" class="card-link">ActionOne</a>
+                <a href="#" class="card-link">ActionTwo</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="" class="class-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Title of Card</h5>
+                <h6 class="card-title">Subtitle of Card</h6>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt praesentium animi ex quibusdam libero temporibus ut rem eos. Ab qui necessitatibus explicabo quae corporis molestiae culpa delectus placeat vero expedita?
+                </p>
+                <button class="btn btn-primary">Ok</button>
+                <a href="#" class="card-link">ActionOne</a>
+                <a href="#" class="card-link">ActionTwo</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="" class="class-img-top">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Item1</li>
+                <li class="list-group-item">Item2</li>
+                <li class="list-group-item">Item3</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Title of cards</h1>                
+            </div>
+            <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus consequatur eligendi. Unde suscipit temporibus voluptate, animi, modi ea consequuntur repellendus porro, corrupti quibusdam repudiandae autem. Nisi aut rem ex.
+            </div>
+            <div class="card-footer">
+                footer
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <div class="card-header">
+               <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link</a>
+                    </li>
+               </ul>                
+            </div>
+            <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus consequatur eligendi. Unde suscipit temporibus voluptate, animi, modi ea consequuntur repellendus porro, corrupti quibusdam repudiandae autem. Nisi aut rem ex.
+            </div>
+            <div class="card-footer">
+                footer
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="" class="card-img">
+            <div class="card-img-overlay text-white">
+                <h5 class="card-title">Title of Image</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia magni exercitationem debitis maiores ratione, nihil dolorem nam excepturi. Doloremque nemo laborum eos deleniti, qui aliquam iure quaerat delectus ducimus quos.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/536/354" alt="" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Title of Image</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia magni exercitationem debitis maiores ratione, nihil dolorem nam excepturi. Doloremque nemo laborum eos deleniti, qui aliquam iure quaerat delectus ducimus quos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#btn-1').on('click', e => {
+                $('[href="#aba2-2"]').tab('show')
+            });
+
+            $('#btn-2').on('click', e => {
+                $('[href="#aba-1"]').tab('show')
+            });
+
+            $('#btn-3').on('click', e => {
+                $('[href="#tab-3"]').tab('show')
+            });
+        });
+    </script> 
+    
+</body>
+</html>
