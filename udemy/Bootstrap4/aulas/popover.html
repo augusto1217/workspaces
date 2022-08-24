@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover" title="Título do Popover">Mostrar popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover" title="Título do Popover" data-placement="left">Mostrar popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover" title="Título do Popover" data-placement="bottom">Mostrar popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do 
+        Popover" title="Título do Popover" data-placement="bottom" data-trigger="focus">Mostrar popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover" title="Título do Popover" data-placement="bottom" data-trigger="hover">Mostrar popover</button>
+
+        <button type="button" class="btn btn-danger" id="btnDanger">Abrir popovers</button>
+
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+           $('[data-toggle="popover"]').popover();
+           $('#btnDanger').on('click', e => {
+            $('[data-toggle="popover"]').popover('toggle');
+           });
+        });
+    </script> 
+    
+</body>
+</html>
