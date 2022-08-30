@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv"></div>
+        </div>
+        <hr>
+
+        <div class="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar w-25"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress" id="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar" style="width: 1px;"></div>
+        </div>
+
+        <hr>
+        <div class="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar w-25 bg-success">25%</div>
+        </div>
+
+        <hr>
+        <div class="progress" style="height: 100px;">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar w-25 bg-success"></div>
+        </div>
+
+        <hr>
+        <div class="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar w-25 bg-success progress-bar-striped">25%</div>
+        </div>
+
+        <hr>
+        <div class="progress">
+            <div role="progressbar" id="alb" aria-label="labeldiv" class="progress-bar w-25 bg-success progress-bar-striped progress-bar-animated">25%</div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+            window.progressInterval = setInterval(()=>{
+
+                let progress = $('#progress .progress-bar').css('width').replace('%','');
+                progress = parseInt(progress) + 1;
+
+                if(progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+
+                $('#progress .progress-bar').css('width',progress + '%');
+            },1000);
+        });
+    </script> 
+    
+</body>
+</html>
